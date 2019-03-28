@@ -20,12 +20,12 @@
     "test:lighthouse": "lighthouse --view  --verbose"
   },
   "devDependencies": {
-    "@mate-academy/stylelint-config": "latest",
-    "@mate-academy/htmllint-config": "latest",
     "@mate-academy/editor-config": "latest",
     "@mate-academy/eslint-config": "latest",
+    "@mate-academy/htmllint-config": "0.0.2",
+    "@mate-academy/stylelint-config": "0.0.4",
     "browser-sync": "^2.26.3",
-    "eslint": "^5.13.0",
+    "eslint": "^5.15.3",
     "foreach-cli": "^1.8.1",
     "html-validator-cli": "^5.0.0",
     "htmllint-cli": "0.0.7",
