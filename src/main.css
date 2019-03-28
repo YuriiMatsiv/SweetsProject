@@ -1,0 +1,43 @@
+
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('images/Fonts/Gilroy/Gilroy-Regular.woff');
+  src: local('Gilroy Regular'), local('Gilroy-Regular'),
+        url('Gilroy-Regular.woff') format('woff'),
+  font-weight: normal;
+  font-style: normal;
+}
+/*font-family: 'Roboto', sans-serif;*/
+
+input{
+  position: absolute;
+  width: 470px;
+  height: 60px;
+  left: 155px;
+  top: 447px;
+  background: #F0F4F7;
+  border-radius: 30px;
+  position: absolute;
+}
+
+button[type="submit"] {
+  border: none;
+  color: #4f432e;
+  background-color: #F0F4F7;
+  float: right;
+  margin-top: 5px;
+}
+
+.container{
+  display: flex;
+  width: 1440px;
+}
+
+.main{
+  width: 50%;
+}
+
+footer{
+  display: flex;
+}
