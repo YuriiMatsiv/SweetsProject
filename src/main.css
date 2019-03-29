@@ -1,5 +1,7 @@
 
-
+body {
+  margin: 0;
+}
 @font-face {
   font-family: 'Gilroy';
   src: url('images/Fonts/Gilroy/Gilroy-Regular.woff');
@@ -10,34 +12,112 @@
 }
 /*font-family: 'Roboto', sans-serif;*/
 
-input{
-  position: absolute;
-  width: 470px;
-  height: 60px;
-  left: 155px;
-  top: 447px;
-  background: #F0F4F7;
-  border-radius: 30px;
-  position: absolute;
-}
-
-button[type="submit"] {
-  border: none;
-  color: #4f432e;
-  background-color: #F0F4F7;
-  float: right;
-  margin-top: 5px;
-}
-
 .container{
+
   display: flex;
-  width: 1440px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1140px;
+  margin: auto;
+
 }
 
 .main{
+  background: aqua;
   width: 50%;
+  padding: 6%;
+  box-sizing: border-box;
+   }
+.mainText {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #F0F4F7;
+
+}
+h1 {
+  font-family: Gilroy;
+  font-size: 48px;
+  line-height: normal;
+  color: #313335;
+}
+.Candy_photo {
+  width: 55px;
+  height: 49px;
+}
+form{
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+input[type="search"]{
+  outline: none;
+  padding: 5px 100px 5px 30px;
+  display: block;
+  width: 470px;
+  height: 60px;
+  background: #F0F4F7;
+  border-radius: 30px;
+}
+button[type="submit"]{
+  position: absolute;
+  top: 7px;
+  right: 10px;
+height: 45px;
+  width: 45px;
+  outline: none;
+  border: none;
+  display: inline-block;
+  background: white;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+aside{
+  background: darkkhaki;
+  width: 50%;
+}
+
+
+/* стилізую aside*/
+aside{
+  width: 570px;
+  padding: 5%;
+  box-sizing: border-box;
+
+}
+li {
+  display: inline;
+  margin: 10px;
+}
+section{
+  border-top: 1px solid #F0F4F7;
+  padding: 20px;
+}
+
+span{
+  font-family: Gilroy;
+  color: #902156;
+  font-size: 10px;
+  line-height: normal;
+  letter-spacing: 0.1em;
+}
+
+h1, h2, h3,h4 {
+  font-family: Gilroy;
+}
+
+p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 footer{
   display: flex;
 }
+
+
+
