@@ -10,10 +10,8 @@ body {
   font-style: normal;
 }
 
-/*font-family: 'Roboto', sans-serif;*/
 .container {
   display: flex;
-
   max-width: 1140px;
   margin: auto;
 }
@@ -58,26 +56,33 @@ input[type="search"] {
   border: none;
 }
 
+input:hover {
+  border: 2px solid #6bca3e;
+  color: #6bca3e;
+  background: #e2eaf0;
+}
+
+button:hover {
+  border: #6bca3e;
+}
+
 button[type="submit"] {
   position: absolute;
   top: 7px;
   right: 10px;
   height: 45px;
   width: 45px;
-  outline: none;
-  border: none;
   display: inline-block;
   background: white;
-  color: #fff;
-  padding: 10px 25px;
-  border-radius: 30px;
-  cursor: pointer;
+  border-radius: 50%;
+  border: none;
 }
 
 h1 {
   font-size: 48px;
   line-height: normal;
   color: #313335;
+  margin-bottom: 0;
 }
 
 h1,
@@ -86,6 +91,10 @@ h3,
 h4 {
   font-family: Gilroy, sans-serif;
   /*margin: 0px;*/
+}
+
+h3 {
+  margin: 0;
 }
 
 a {
@@ -101,7 +110,7 @@ a {
 /* стилізую aside*/
 aside {
   width: 50%;
-  padding: 5% 2% 5% 7%;
+  padding: 8% 2% 5% 6%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -110,6 +119,8 @@ aside {
 .headerlist {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-basis: auto;
 }
 
 .drop {
@@ -122,18 +133,27 @@ aside {
   align-self: center;
 }
 
-.list li {
+.asideList {
   display: inline;
   margin: 10px;
+  width: 24px;
+  height: 24px;
 }
 
-.list {
-  border-bottom: 1px solid #f0f4f7;
-  padding-bottom: 15px;
+.photolink {
+  max-width: 100%;
+  max-height: 100%;
+  background: #f0f4f7;
+  border-radius: 50%;
+}
+
+.photolink:hover {
+  border: 2px solid #6bca3e;
 }
 
 section {
-  padding-bottom: 20px;
+  padding-bottom: 13px;
+  margin-right: 20px;
   border-bottom: 1px solid #f0f4f7;
   box-sizing: border-box;
   display: flex;
@@ -168,6 +188,11 @@ section {
   color: #313335;
 }
 
+.link:hover {
+  border: 2px solid #6bca3e;
+  color: #6bca3e;
+}
+
 .linkForSweets {
   background: #902156;
   border-radius: 22px;
@@ -181,13 +206,9 @@ section {
   border-top: 1px solid #f0f4f7;
 }
 
-/*span {*/
-/*font-family: Gilroy, sans-serif;*/
-/*color: #902156;*/
-/*font-size: 10px;*/
-/*line-height: normal;*/
-/*letter-spacing: 0.1em;*/
-/*}*/
+.linkForSweets:hover {
+  background-color: #ae2968;
+}
 
 p {
   font-family: "Roboto", sans-serif;
@@ -199,6 +220,7 @@ p {
 
 .sweetslink {
   margin-top: 45px;
+  margin-bottom: 25px;
 }
 
 /*FOOTER*/
@@ -273,9 +295,7 @@ h4 {
 
 span {
   font-family: "Roboto", sans-serif;
-
   font-size: 10px;
-
   color: #902156;
 }
 
@@ -287,6 +307,10 @@ span {
 ul {
   padding: 0;
   line-height: 1.5;
+}
+
+.footerlist li:hover a {
+  color: red;
 }
 
 .footerspan {
