@@ -18,14 +18,14 @@ body {
 
 .main {
   width: 50%;
-  padding: 6% 10% 6% 1%;
+  padding: 2% 10% 6% 1%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
 }
 
 .mainText {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   border-bottom: 1px solid #f0f4f7;
 }
 
@@ -46,14 +46,25 @@ form {
   position: relative;
 }
 
-input[type="search"] {
-  padding: 5px 100px 5px 30px;
+input {
+  padding-left: 20px;
   display: block;
-  width: 470px;
+  width: 100%;
   height: 60px;
   background: #f0f4f7;
   border-radius: 30px;
   border: none;
+  outline: none;
+}
+
+input:invalid {
+  background: rgba(218, 67, 83, 0.1);
+  border: 2px solid rgba(218, 67, 83, 0.4);
+}
+
+input:valid {
+  border: 2px solid #e2eaf0;
+  color: black;
 }
 
 input:hover {
@@ -62,20 +73,16 @@ input:hover {
   background: #e2eaf0;
 }
 
-button:hover {
-  border: #6bca3e;
-}
-
-button[type="submit"] {
+button {
   position: absolute;
-  top: 7px;
-  right: 10px;
+  top: 10px;
+  right: -10px;
   height: 45px;
   width: 45px;
   display: inline-block;
   background: white;
   border-radius: 50%;
-  border: none;
+  border: 2px solid #e2eaf0;
 }
 
 h1 {
@@ -90,7 +97,6 @@ h2,
 h3,
 h4 {
   font-family: Gilroy, sans-serif;
-  /*margin: 0px;*/
 }
 
 h3 {
@@ -106,21 +112,42 @@ a {
   line-height: normal;
   color: #a8b3c2;
 }
-
-/* стилізую aside*/
+/* working with aside*/
 aside {
   width: 50%;
-  padding: 8% 2% 5% 6%;
+  padding: 2% 2% 5% 5%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
 }
 
 .headerlist {
+  padding-left: 1px;
+}
+
+.list {
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-  flex-basis: auto;
+  justify-content: space-between;
+  padding-right: 69px;
+  margin-top: 29px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #f0f4f7;
+}
+
+.menulink {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background: #f0f4f7;
+}
+
+.menulink:hover {
+  width: 21px;
+  height: 21px;
+  border: 2px solid #6bca3e;
 }
 
 .drop {
@@ -134,26 +161,14 @@ aside {
 }
 
 .asideList {
-  display: inline;
-  margin: 10px;
+  display: flex;
   width: 24px;
   height: 24px;
 }
 
-.photolink {
-  max-width: 100%;
-  max-height: 100%;
-  background: #f0f4f7;
-  border-radius: 50%;
-}
-
-.photolink:hover {
-  border: 2px solid #6bca3e;
-}
-
 section {
   padding-bottom: 13px;
-  margin-right: 20px;
+  margin-right: 43px;
   border-bottom: 1px solid #f0f4f7;
   box-sizing: border-box;
   display: flex;
@@ -165,12 +180,14 @@ section {
   justify-content: space-between;
   box-sizing: border-box;
   height: 50%;
+  margin: 7px 0 0 16px;
 }
 
 .sectionvalue2 {
   display: flex;
   justify-content: space-between;
   height: 50%;
+  margin-left: 10px;
 }
 
 .link {
@@ -198,12 +215,8 @@ section {
   border-radius: 22px;
   font-family: Gilroy, sans-serif;
   font-size: 14px;
-  line-height: normal;
-  text-align: center;
-  padding: 14px 150px;
-  margin-top: 30px;
+  padding: 14px 170px;
   color: #fff;
-  border-top: 1px solid #f0f4f7;
 }
 
 .linkForSweets:hover {
@@ -222,7 +235,6 @@ p {
   margin-top: 45px;
   margin-bottom: 25px;
 }
-
 /*FOOTER*/
 footer {
   background: #313335;
@@ -230,19 +242,18 @@ footer {
 
 .footerConteiner {
   display: flex;
-  height: 607px;
   background: #313335;
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 1140px;
   margin: auto;
+  padding-bottom: 15px;
 }
 
 .footerLeft {
   display: flex;
   justify-content: space-between;
   width: 50%;
-  /*max-height: 500px;*/
   padding: 6% 6% 0% 0%;
   align-items: baseline;
   box-sizing: border-box;
@@ -253,7 +264,6 @@ footer {
   display: inline-block;
   list-style-type: none;
   align-self: center;
-
 }
 
 .footerRight {
