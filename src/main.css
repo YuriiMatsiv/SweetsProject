@@ -205,6 +205,8 @@ section {
   font-family: var(--Roboto);
   font-size: 10px;
   color: var(--Color5);
+  letter-spacing: 1px;
+
 }
 
 .link {
