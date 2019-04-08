@@ -37,7 +37,7 @@ body {
 }
 
 .GetCangy {
-  margin-bottom: 30px;
+  margin: 10px 0 16px;
 }
 
 form {
@@ -103,6 +103,7 @@ h3 {
   margin: 0;
 }
 
+
 a {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
@@ -115,7 +116,7 @@ a {
 /* working with aside*/
 aside {
   width: 50%;
-  padding: 2% 2% 5% 5%;
+  padding: 3% 2% 5% 5%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -153,7 +154,7 @@ aside {
 .drop {
   width: 4px;
   height: 16px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .asidelink {
@@ -179,7 +180,7 @@ section {
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  height: 50%;
+  height: 39%;
   margin: 7px 0 0 16px;
 }
 
@@ -187,7 +188,7 @@ section {
   display: flex;
   justify-content: space-between;
   height: 50%;
-  margin-left: 10px;
+  margin-left: 16px;
 }
 
 .link {
@@ -215,7 +216,7 @@ section {
   border-radius: 22px;
   font-family: Gilroy, sans-serif;
   font-size: 14px;
-  padding: 14px 170px;
+  padding: 14px 175px;
   color: #fff;
 }
 
@@ -232,8 +233,8 @@ p {
 }
 
 .sweetslink {
-  margin-top: 45px;
-  margin-bottom: 25px;
+  margin-top: 47px;
+  margin-bottom: 32px;
 }
 /*FOOTER*/
 footer {
@@ -254,28 +255,27 @@ footer {
   display: flex;
   justify-content: space-between;
   width: 50%;
-  padding: 6% 6% 0% 0%;
+  padding: 6% 8% 0% 1%;
   align-items: baseline;
   box-sizing: border-box;
-  padding-top: 300px;
+  padding-top: 251px;
 }
 
-.footerlist {
-  display: inline-block;
+.footerlist_left {
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
   align-self: center;
+
 }
 
 .footerRight {
   width: 50%;
-  max-height: 500px;
   box-sizing: border-box;
-  padding: 6% 6% 0%;
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  padding-top: 300px;
-  padding-right: 20px;
+  padding: 251px 14px 60px 65px;
 }
 
 .details {
@@ -298,7 +298,9 @@ h4 {
   line-height: 18px;
   color: #fff;
 }
-
+.contakts{
+  flex-basis: auto;
+}
 .content {
   width: 50%;
 }
@@ -317,12 +319,13 @@ span {
 ul {
   padding: 0;
   line-height: 1.5;
-}
-
-.footerlist li:hover a {
-  color: red;
+  margin-top: -5px;
 }
 
 .footerspan {
   color: #6bca3e;
+}
+
+.footerlist li a {
+  padding: 5px 0;
 }
