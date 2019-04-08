@@ -1,3 +1,15 @@
+:root {
+  --inputColor1: #f0f4f7;
+  --inputColor2: #e2eaf0;
+  --inputColor3: rgba(218, 67, 83, 0.1);
+  --inpurColor4: #6bca3e;
+  --Color5: #902156;
+  --Color6: #313335;
+  --blackColor: #313335;
+  --GiroyFont: gilroy, sans-serif;
+  --Roboto: roboto, sans-serif;
+}
+
 body {
   margin: 0;
 }
@@ -40,40 +52,40 @@ body {
   margin: 10px 0 16px;
 }
 
-form {
+.firstForm {
   display: inline-block;
   vertical-align: top;
   position: relative;
 }
 
-input {
+.firstInput {
   padding-left: 20px;
   display: block;
   width: 100%;
   height: 60px;
-  background: #f0f4f7;
+  background: var(--inputColor1);
   border-radius: 30px;
   border: none;
   outline: none;
 }
 
-input:invalid {
-  background: rgba(218, 67, 83, 0.1);
+.firstInput:invalid {
+  background: var(--inputColor3);
   border: 2px solid rgba(218, 67, 83, 0.4);
 }
 
-input:valid {
+.firstInput:valid {
   border: 2px solid #e2eaf0;
   color: black;
 }
 
-input:hover {
+.firstInput:hover {
   border: 2px solid #6bca3e;
-  color: #6bca3e;
-  background: #e2eaf0;
+  color: var(--inpurColor4);
+  background: var(--inputColor2);
 }
 
-button {
+.mainButton {
   position: absolute;
   top: 10px;
   right: -10px;
@@ -85,30 +97,29 @@ button {
   border: 2px solid #e2eaf0;
 }
 
-h1 {
+.h1text {
   font-size: 48px;
   line-height: normal;
-  color: #313335;
+  color: var(--blackColor);
   margin-bottom: 0;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: Gilroy, sans-serif;
+.h1text,
+.h3text,
+.h4text,
+.GetCangy {
+  font-family: var(--GiroyFont);
 }
 
-h3 {
+.h3text {
   margin: 0;
 }
 
-
-a {
+.link,
+.FooterLeftLink,
+.footerA {
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  font-family: var(--Roboto);
   font-size: 12px;
   line-height: normal;
   color: #a8b3c2;
@@ -191,6 +202,12 @@ section {
   margin-left: 16px;
 }
 
+.asideSpan {
+  font-family: var(--Roboto);
+  font-size: 10px;
+  color: var(--Color5);
+}
+
 .link {
   width: 76px;
   height: 28px;
@@ -198,12 +215,12 @@ section {
   border-radius: 22px;
   box-sizing: border-box;
   padding: 9px 25px;
-  font-family: Gilroy, sans-serif;
+  font-family: var(--GiroyFont);
   font-size: 10px;
   line-height: normal;
   text-align: center;
   letter-spacing: 0.1em;
-  color: #313335;
+  color: var(--Color6);
 }
 
 .link:hover {
@@ -214,7 +231,7 @@ section {
 .linkForSweets {
   background: #902156;
   border-radius: 22px;
-  font-family: Gilroy, sans-serif;
+  font-family: var(--GiroyFont);
   font-size: 14px;
   padding: 14px 175px;
   color: #fff;
@@ -224,8 +241,11 @@ section {
   background-color: #ae2968;
 }
 
-p {
-  font-family: "Roboto", sans-serif;
+.mainText,
+.simplP,
+.ft_info,
+.details {
+  font-family: var(--Roboto);
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -266,7 +286,6 @@ footer {
   flex-direction: column;
   list-style-type: none;
   align-self: center;
-
 }
 
 .footerRight {
@@ -284,31 +303,27 @@ footer {
   align-self: center;
 }
 
-h4 {
+.h4text {
   color: #fff;
-  font-family: Gilroy, sans-serif;
+  font-family: var(--GiroyFont);
   font-size: 14px;
   line-height: normal;
 }
 
 .ft_info {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--Roboto);
   font-weight: normal;
   font-size: 12px;
   line-height: 18px;
   color: #fff;
 }
-.contakts{
+
+.contakts {
   flex-basis: auto;
 }
+
 .content {
   width: 50%;
-}
-
-span {
-  font-family: "Roboto", sans-serif;
-  font-size: 10px;
-  color: #902156;
 }
 
 .lastdiv {
@@ -316,16 +331,16 @@ span {
   text-align: right;
 }
 
-ul {
+.footerlist_left {
   padding: 0;
   line-height: 1.5;
   margin-top: -5px;
 }
 
 .footerspan {
-  color: #6bca3e;
+  color: var(--inpurColor4);
 }
 
-.footerlist li a {
+.footerA {
   padding: 5px 0;
 }
