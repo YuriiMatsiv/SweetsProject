@@ -140,9 +140,8 @@ aside {
 .list {
   display: flex;
   justify-content: space-between;
-  padding-right: 69px;
+  padding: 0 69px 18px 2px;
   margin-top: 29px;
-  padding-bottom: 18px;
   border-bottom: 1px solid #f0f4f7;
 }
 
@@ -235,6 +234,7 @@ section {
   font-size: 14px;
   padding: 14px 175px;
   color: #fff;
+  text-decoration: none;
 }
 
 .linkForSweets:hover {
@@ -316,6 +316,7 @@ footer {
   font-size: 12px;
   line-height: 18px;
   color: #fff;
+  margin-bottom: 6px;
 }
 
 .contakts {
@@ -339,6 +340,8 @@ footer {
 
 .footerspan {
   color: var(--inpurColor4);
+  font-family: var(--Roboto);
+  font-size: 12px;
 }
 
 .footerA {
