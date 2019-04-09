@@ -5,6 +5,8 @@
   --inpurColor4: #6bca3e;
   --Color5: #902156;
   --Color6: #313335;
+  --Color7: #da4353;
+  --Color8: rgba(218, 67, 83, 0.4);
   --blackColor: #313335;
   --GiroyFont: gilroy, sans-serif;
   --Roboto: roboto, sans-serif;
@@ -67,21 +69,33 @@ body {
   border-radius: 30px;
   border: none;
   outline: none;
+  cursor: pointer;
+}
+
+.mainButton:hover {
+  background: none;
+  border: 2px solid var(--inpurColor4);
+  outline: none;
+  cursor: pointer;
+}
+
+.firstInput:active {
+  background: white;
 }
 
 .firstInput:invalid {
   background: var(--inputColor3);
-  border: 2px solid rgba(218, 67, 83, 0.4);
+  border: 2px solid var(--Color8);
+  color: var(--Color7);
 }
 
-.firstInput:valid {
-  border: 2px solid #e2eaf0;
-  color: black;
+.firstInput:invalid + .mainButton {
+  border: 2px solid var(--Color8);
+  background: white;
 }
 
 .firstInput:hover {
   border: 2px solid #6bca3e;
-  color: var(--inpurColor4);
   background: var(--inputColor2);
 }
 
