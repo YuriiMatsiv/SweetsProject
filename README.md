@@ -5,4 +5,4 @@
 Sweets page - cool stuff that saves time and improves your work 
 
 
-We use: HTML and CSS
+We use: HTML, CSS
