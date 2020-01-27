@@ -11,15 +11,12 @@
   --GiroyFont: gilroy, sans-serif;
   --Roboto: roboto, sans-serif;
 }
-
-*{
+* {
   transition: 1s;
 }
-
 body {
   margin: 0;
 }
-
 @font-face {
   font-family: "Gilroy";
   src: url("images/Fonts/Gilroy/Gilroy-Regular.woff");
@@ -27,13 +24,11 @@ body {
   font-weight: normal;
   font-style: normal;
 }
-
 .container {
   display: flex;
   max-width: 1140px;
   margin: auto;
 }
-
 .main {
   width: 50%;
   padding: 2% 10% 6% 1%;
@@ -41,29 +36,24 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 .mainText {
   padding-bottom: 30px;
   border-bottom: 1px solid #f0f4f7;
 }
-
 .Candy_photo {
   width: 55px;
   height: 49px;
   margin-left: 30px;
   margin-top: 40px;
 }
-
 .GetCangy {
   margin: 10px 0 16px;
 }
-
 .firstForm {
   display: inline-block;
   vertical-align: top;
   position: relative;
 }
-
 .firstInput {
   padding-left: 20px;
   display: block;
@@ -75,34 +65,28 @@ body {
   outline: none;
   cursor: pointer;
 }
-
 .mainButton:hover {
   background: none;
   border: 2px solid var(--inpurColor4);
   outline: none;
   cursor: pointer;
 }
-
 .firstInput:active {
   background: white;
 }
-
 .firstInput:invalid {
   background: var(--inputColor3);
   border: 2px solid var(--Color8);
   color: var(--Color7);
 }
-
 .firstInput:invalid + .mainButton {
   border: 2px solid var(--Color8);
   background: white;
 }
-
 .firstInput:hover {
   border: 2px solid #6bca3e;
   background: var(--inputColor2);
 }
-
 .mainButton {
   position: absolute;
   top: 10px;
@@ -114,25 +98,21 @@ body {
   border-radius: 50%;
   border: 2px solid #e2eaf0;
 }
-
 .h1text {
   font-size: 48px;
   line-height: normal;
   color: var(--blackColor);
   margin-bottom: 0;
 }
-
 .h1text,
 .h3text,
 .h4text,
 .GetCangy {
   font-family: var(--GiroyFont);
 }
-
 .h3text {
   margin: 0;
 }
-
 .link,
 .FooterLeftLink,
 .footerA {
@@ -142,7 +122,6 @@ body {
   line-height: normal;
   color: #a8b3c2;
 }
-/* working with aside*/
 aside {
   width: 50%;
   padding: 3% 2% 5% 5%;
@@ -150,11 +129,9 @@ aside {
   display: flex;
   flex-direction: column;
 }
-
 .headerlist {
   padding-left: 1px;
 }
-
 .list {
   display: flex;
   justify-content: space-between;
@@ -162,7 +139,6 @@ aside {
   margin-top: 29px;
   border-bottom: 1px solid #f0f4f7;
 }
-
 .menulink {
   display: flex;
   width: 24px;
@@ -173,27 +149,22 @@ aside {
   background: #f0f4f7;
   border: 2px solid white;
 }
-
 .menulink:hover {
   border: 2px solid #6bca3e;
 }
-
 .drop {
   width: 4px;
   height: 16px;
   margin-top: 10px;
 }
-
 .asidelink {
   align-self: center;
 }
-
 .asideList {
   display: flex;
   width: 24px;
   height: 24px;
 }
-
 section {
   padding-bottom: 13px;
   margin-right: 43px;
@@ -202,7 +173,6 @@ section {
   display: flex;
   flex-direction: column;
 }
-
 .sectionvalue1 {
   display: flex;
   justify-content: space-between;
@@ -210,22 +180,18 @@ section {
   height: 39%;
   margin: 7px 0 0 16px;
 }
-
 .sectionvalue2 {
   display: flex;
   justify-content: space-between;
   height: 50%;
   margin-left: 16px;
 }
-
 .asideSpan {
   font-family: var(--Roboto);
   font-size: 10px;
   color: var(--Color5);
   letter-spacing: 1px;
-
 }
-
 .link {
   width: 76px;
   height: 28px;
@@ -240,26 +206,29 @@ section {
   letter-spacing: 0.1em;
   color: var(--Color6);
 }
-
 .link:hover {
   border: 2px solid #6bca3e;
   color: #6bca3e;
 }
-
 .linkForSweets {
   background: #902156;
   border-radius: 22px;
   font-family: var(--GiroyFont);
-  font-size: 14px;
-  padding: 14px 175px;
+  font-size: 18px;
+  padding: 14px 0px;
+  display: block;
+  width: 100%;
   color: #fff;
   text-decoration: none;
+  text-align: center;
 }
-
 .linkForSweets:hover {
   background-color: #ae2968;
 }
-
+.sweetslink {
+  margin-top: 47px;
+  margin-bottom: 32px;
+}
 .mainText,
 .simplP,
 .ft_info,
@@ -270,16 +239,9 @@ section {
   font-size: 16px;
   line-height: 24px;
 }
-
-.sweetslink {
-  margin-top: 47px;
-  margin-bottom: 32px;
-}
-/*FOOTER*/
 footer {
   background: #313335;
 }
-
 .footerConteiner {
   display: flex;
   background: #313335;
@@ -289,7 +251,6 @@ footer {
   margin: auto;
   padding-bottom: 15px;
 }
-
 .footerLeft {
   display: flex;
   justify-content: space-between;
@@ -299,14 +260,12 @@ footer {
   box-sizing: border-box;
   padding-top: 251px;
 }
-
 .footerlist_left {
   display: flex;
   flex-direction: column;
   list-style-type: none;
   align-self: center;
 }
-
 .footerRight {
   width: 50%;
   box-sizing: border-box;
@@ -315,20 +274,17 @@ footer {
   align-items: baseline;
   padding: 251px 14px 60px 65px;
 }
-
 .details {
   font-size: 11px;
   color: #6e7680;
   align-self: center;
 }
-
 .h4text {
   color: #fff;
   font-family: var(--GiroyFont);
   font-size: 14px;
   line-height: normal;
 }
-
 .ft_info {
   font-family: var(--Roboto);
   font-weight: normal;
@@ -337,36 +293,74 @@ footer {
   color: #fff;
   margin-bottom: 6px;
 }
-
 .contakts {
   flex-basis: auto;
 }
-
 .content {
   width: 50%;
 }
-
 .lastdiv {
   width: 100%;
   text-align: right;
 }
-
 .footerlist_left {
   padding: 0;
   line-height: 1.5;
   margin-top: -5px;
 }
-
 .footerspan {
   color: var(--inpurColor4);
   font-family: var(--Roboto);
   font-size: 12px;
 }
-
 .footerA {
   padding: 5px 0;
 }
-
 footer a:hover {
   color: var(--inpurColor4);
+}
+@media only screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+  .main {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .p_main {
+    width: 100%;
+  }
+  .mainText {
+    text-align: justify;
+  }
+  .GetCangy,
+  h1 {
+    text-align: center;
+  }
+  aside {
+    width: 90%;
+  }
+  .footerConteiner {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .footerLeft {
+    width: 100%;
+    justify-content: space-around;
+    padding: 0;
+  }
+  .footerRight {
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+  .firstForm {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .content {
+    width: 30%;
+  }
 }
